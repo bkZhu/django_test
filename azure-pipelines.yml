@@ -9,12 +9,10 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-PYTHON_VERSION: '3.7'
-
 steps:
 - task: UsePythonVersion@0
   inputs:
-    versionSpec: '$(PYTHON_VERSION)'
+    versionSpec: '3.7'
     architecture: 'x64'
 
 - task: PythonScript@0
